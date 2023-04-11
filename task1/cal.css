@@ -1,0 +1,46 @@
+body{
+    background-image: url("https://c8.alamy.com/comp/HGCPPN/business-concept-calculator-on-paper-background-with-business-chart-HGCPPN.jpg");
+    background-color: #cccccc; 
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+.container{
+    text-align: center;
+    margin-top:23px
+}
+
+table{
+    margin: auto;
+}
+
+input{
+    border-radius: 21px;
+    border: 5px solid #46243f;
+    font-size:20px;
+    height: 40px;
+    width: 256px;
+}
+
+button{
+    border-radius: 10px;
+    font-size: 20px;
+    background: #b9d664;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+}
+
+.calculator{ 
+    border: 4px solid #d777da;
+    background-color: #d199ff;
+    padding: 23px;
+    border-radius: 40px;
+    display: inline-block;
+    
+}
+
+h1{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
