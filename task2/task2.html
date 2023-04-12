@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="#" class="nav-item active">Home</a>
+        </li>
+        <li>
+          <a href="#tribute-info" class="nav-item">Info</a>
+        </li>
+        <li>
+          <a href="#awards" class="nav-item">Awards</a>
+        </li>
+        <li>
+          <a
+            id="tribute-link"
+            href="https://www.theeducationmagazine.com/word-art/apj-abdul-kalam-quotes/"
+            target="_blank"
+            class="nav-item"
+            >Quotes</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <section class="intro" id="home">
+        <h1 id="title" align="center" style="color:#FF1493;">
+          Dr. Abdul Kalam
+        </h1>
+        <span></span>
+        <div class="row">
+          <div class="col">
+            <div id="img-div1" align="center">
+              <img
+                id="image1"
+                src="https://www.theeducationmagazine.com/wp-content/uploads/2020/03/1-4.jpg"
+                alt="The Missile-Man, Dr APJ Abdul Kalam" height="600" width="1000" 
+              />
+              <p class="img-caption" align="center" style="color:#FF4500;">Dr. Abdul Kalam </p>
+            </div>
+          </div>
+          <div class="col">
+            <p class="desc" style="color:#00BFFF;">
+              Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace
+              scientist and politician who served as the 11th President of India
+              from 2002 to 2007. He was born and raised in Rameswaram, Tamil
+              Nadu and studied physics and aerospace engineering. He spent the
+              next four decades as a scientist and science administrator, mainly
+              at the Defence Research and Development Organisation (DRDO) and
+              Indian Space Research Organisation (ISRO) and was intimately
+              involved in India's civilian space programme and military missile
+              development efforts.He thus came to be known as the Missile Man of
+              India.
+            </p>
+            <p class="desc" style="color:#00BFFF;" >
+              Kalam was elected as the 11th President of India in 2002 with the
+              support of both the ruling Bharatiya Janata Party and the
+              then-opposition Indian National Congress. Widely referred to as
+              the "<strong>People's President</strong>"
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tribute-info" class="info">
+        <h3 id="headline" class="headline" align="center" style="color:#006400;" >Timeline</h3>
+        <span></span>
+        <ul style="color:#D2691E;">
+          <li>
+            <strong>1954</strong> - Graduated in physics from st joseph college,
+            Tiruchirappalli.
+          </li>
+          <li>
+            <strong>1958</strong> - Failed after applying for his dream- pilot
+            in DRDO
+          </li>
+          <li>
+            <strong>1960</strong> - Gained degree in Aeronautical Engineering
+            from Madras Institute of Technology. scars on me."
+          </li>
+          <li><strong>1980</strong> - Transferred to ISRO from the DRDO.</li>
+          <li>
+            <strong>1982</strong> - India enters the space club by putting the
+            Rohini satellite in the near earth orbit with the first indigenous
+            Satellite Launch Vehicle (SLV-III), developed under the stewardship
+            of Dr. Kalam. 1982:Kalam planned the program that produced a number
+            of successful missiles, which earned him the nickname Missile Man.
+          </li>
+          <li>
+            <strong>1992-1999</strong> - Works as Chief Scientific Advisor to
+            the PM and Secretary of the DRDO.
+          </li>
+          <li>
+            <strong>1998</strong> - India conducts the Pokhran II nuclear tests
+            in May with Dr. Kalam as the chief project coordinator.
+          </li>
+          <li>
+            <strong>1999-2001</strong> - Principal Scientific Advisor to the
+            Government of India.
+          </li>
+          <li><strong>2002-2007</strong> - President of India.</li>
+          <li>
+            <strong>2015</strong> - APJ Abdul Kalam was died on 27-07-2015 in
+            Shillong, Meghalaya, India. He died due to a cardiac arrest at the
+            age of 83.
+          </li>
+        </ul>
+      </section>
+
+      <section class="awards" id="awards">
+        <h3 class="headline" align="center" style="color:#000080;">Achievements</h3>
+        <span></span>
+        <div class="row">
+          <div class="col">
+            <ul style="color:#FF69B4;">
+              <li><strong>1997</strong>-Bharat Ratna</li>
+              <li><strong>1981</strong>-Padma Bhushan</li>
+              <li><strong>1990</strong>-Padam Vibushan</li>
+              <li>
+                <strong>1997</strong>-Indira Gandhi Award for national
+                integration
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div id="img-div" align="center" >
+              <img
+                id="image"
+                src="https://pbs.twimg.com/media/E7RckUsVcAcOrhY.jpg"
+                alt="The Missile-Man, Dr APJ Abdul Kalam" height="600" width=""500
+                width="230px"
+              />
+              <p id="img-caption" style="color:rgb(128, 6, 203)">THE MISSILE MAN OF INDIA</p>
+            </div>
+          </div>
+          <div class="col" style="color:#FF69B4;">
+            <ul>
+              <li><strong>1998</strong>-Savarkar Award</li>
+              <li><strong>2007</strong>-King Charles II Award</li>
+              <li><strong>2011</strong>-IEEE Honorary Award</li>
+              <li><strong>2000</strong>-Ramanujan Award</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      var header = document.getElementById('menu');
+      var btns = header.getElementsByClassName('nav-item');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function () {
+          var current = document.getElementsByClassName('active');
+          current[0].className = current[0].className.replace(' active', '');
+          this.className += ' active';
+        });
+      }
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
